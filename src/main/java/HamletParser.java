@@ -36,6 +36,10 @@ public class HamletParser {
         return result.toString();
     }
 
+    /* Using basic "Hamlet" to match b/c regex of [Hh][Aa][Mm][Ll][Ee][Tt] will not address
+       places where we come across replacing "Hamlet" vs "HAMLET"
+     */
+
         public String changeHamletToLeon() {
 
             Pattern pattern = Pattern.compile("Hamlet");
